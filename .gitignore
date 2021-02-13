@@ -1,0 +1,4 @@
+env
+*.csv
+Downloaded_Filings
+*.txt
