@@ -54,6 +54,8 @@ class secscraper:
     def get_report(self, ticker, key = '10-Q'):
         cik = self.get_cik(ticker)
         url = self.get_excel_url(cik, key=key)
-        dfs = pd.read_excel(url, sheet_name = None )
+        dfs = pd.read_excel(url, 
+                            sheet_name = None,
+                           engine='openpyxl')
         return dfs
 
